@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    background-color: none;
+    background-image: url('https://img.freepik.com/vetores-gratis/fundo-de-dia-internacional-do-gato-desenhado-a-mao-com-gatos_23-2149454620.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1722038400&semt=ais_user'); 
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+  }
+    
+  
+  
+    .container-slider {
+      display: flex;
+      width: 100%;
+      min-height: 100vh;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+    }
+    
+    .container-images {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 700px;
+    }
+    
+    .slider {
+      opacity: 0;
+      transition: opacity .2s;
+      position: absolute;
+      width: 100%;
+      border-radius: 10px;
+    }
+    
+    .on {
+      opacity: 1;
+    }
+    
+    #prev-button, #next-button {
+      width: 30px;
+      height: 30px;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+    }
+    
+    #prev-button img, #next-button img {
+      width: 100%;
+      height: 100%;
+    }
+    
+    #prev-button {
+      transform: rotate(180deg);
+    }
